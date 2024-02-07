@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>gitnote | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="术语 HEAD: 指针指向当前分支 master 主干分支  命令行基本操作 git checkout --filename 从当前版本恢复文件 git remove filename 从当前版本库删除文件  分支操作 git checkout -b &lt;name&gt; checkout后面加上参数-b,表示创建并切换 git branch 查看所有分支，当前分支前会有*号 git chec">
+<meta property="og:type" content="article">
+<meta property="og:title" content="gitnote">
+<meta property="og:url" content="http://example.com/2024/02/07/gitnote/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="术语 HEAD: 指针指向当前分支 master 主干分支  命令行基本操作 git checkout --filename 从当前版本恢复文件 git remove filename 从当前版本库删除文件  分支操作 git checkout -b &lt;name&gt; checkout后面加上参数-b,表示创建并切换 git branch 查看所有分支，当前分支前会有*号 git chec">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-02-07T14:28:48.332Z">
+<meta property="article:modified_time" content="2024-02-07T14:41:24.462Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="git">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-gitnote" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/02/07/gitnote/" class="article-date">
+  <time class="dt-published" datetime="2024-02-07T14:28:48.332Z" itemprop="datePublished">2024-02-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      gitnote
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="术语"><a href="#术语" class="headerlink" title="术语"></a>术语</h2><ul>
+<li>HEAD: 指针指向当前分支</li>
+<li>master 主干分支</li>
+</ul>
+<h2 id="命令行"><a href="#命令行" class="headerlink" title="命令行"></a>命令行</h2><h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><ul>
+<li><code>git checkout --filename</code> 从当前版本恢复文件</li>
+<li><code>git remove filename</code> 从当前版本库删除文件</li>
+</ul>
+<h3 id="分支操作"><a href="#分支操作" class="headerlink" title="分支操作"></a>分支操作</h3><ul>
+<li><code>git checkout -b &lt;name&gt;</code> checkout后面加上参数<code>-b</code>,表示创建并切换</li>
+<li><code>git branch</code> 查看所有分支，当前分支前会有<code>*</code>号</li>
+<li><code>git checkout &lt;name&gt;</code> 切换分支</li>
+<li><code>git branch &lt;name&gt;</code> 创建分支</li>
+<li><code>git merge &lt;name&gt;</code> 当前分支与某分支合并</li>
+<li><code>git branch -d &lt;name&gt;</code> 删除分支</li>
+</ul>
+<h3 id="cherry-pick操作"><a href="#cherry-pick操作" class="headerlink" title="cherry-pick操作"></a>cherry-pick操作</h3><ul>
+<li><code>git cherry-pick &lt;HashA&gt; &lt;HashB&gt;</code></li>
+<li><code>git cherry-pick &lt;HashA&gt;..&lt;HashB&gt;</code>，选择A-B之间的系列提交，不包含A</li>
+<li><code>git cherry-pick &lt;HashA&gt;^..&lt;HashB&gt;</code>，选择A-B之间的系列提交，包含A</li>
+<li><code>git cherry-pick --continue</code> 冲突时，解决冲突后继续.</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/02/07/gitnote/" data-id="clsbvyc3h0000ksj399r4dk5s" data-title="gitnote" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2024/02/07/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%AD%A3%E5%88%99/" rel="tag">正则</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BD%91%E7%BB%9C/" rel="tag">网络</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/%E6%AD%A3%E5%88%99/" style="font-size: 10px;">正则</a> <a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 10px;">网络</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/02/">February 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/02/07/regexp/">match、search、test、exec</a>
+          </li>
+        
+          <li>
+            <a href="/2024/02/07/http_note/">http总结</a>
+          </li>
+        
+          <li>
+            <a href="/2024/02/07/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2024/02/07/gitnote/">gitnote</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
